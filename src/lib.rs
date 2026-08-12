@@ -1,4 +1,4 @@
-//! # ZeroicAI Examples
+//! # RustyAI Examples
 //!
 //! Run any example with:
 //! ```bash
