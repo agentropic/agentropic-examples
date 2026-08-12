@@ -1,8 +1,8 @@
 //! Team Pattern: Leader assigns tasks, Executors work, Coordinator tracks progress.
-//! Uses Team, Role, and RoleType from z-patterns with real running agents.
-use z_core::{Agent, AgentContext, AgentId, AgentResult};
-use z_patterns::team::{Team, Role, RoleType};
-use z_runtime::prelude::*;
+//! Uses Team, Role, and RoleType from patterns with real running agents.
+use agent_core::{Agent, AgentContext, AgentId, AgentResult};
+use patterns::team::{Team, Role, RoleType};
+use runtime::prelude::*;
 use async_trait::async_trait;
 
 // ── Leader Agent ────────────────────────────────────────────────────
@@ -195,7 +195,7 @@ impl Agent for CoordinatorAgent {
 #[tokio::main]
 async fn main() -> Result<(), RuntimeError> {
     println!("╔═══════════════════════════════════════════════╗");
-    println!("║   ZeroicAI — Team Pattern Demo              ║");
+    println!("║   RustyAI — Team Pattern Demo              ║");
     println!("║   Leader → Executors → Coordinator            ║");
     println!("╚═══════════════════════════════════════════════╝\n");
 
