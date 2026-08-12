@@ -1,7 +1,7 @@
 //! Coalition: Agents form a temporary alliance to tackle a big task, then disband.
-use z_core::{Agent, AgentContext, AgentId, AgentResult};
-use z_patterns::coalition::{Coalition, Strategy, StrategyType};
-use z_runtime::prelude::*;
+use agent_core::{Agent, AgentContext, AgentId, AgentResult};
+use patterns::coalition::{Coalition, Strategy, StrategyType};
+use runtime::prelude::*;
 use async_trait::async_trait;
 
 struct RecruiterAgent { id: AgentId, recruited: bool }
@@ -73,7 +73,7 @@ impl Agent for SpecialistAgent {
 #[tokio::main]
 async fn main() -> Result<(), RuntimeError> {
     println!("╔═══════════════════════════════════════════════╗");
-    println!("║   ZeroicAI — Coalition Pattern              ║");
+    println!("║   RustyAI — Coalition Pattern              ║");
     println!("║   Temporary alliance for a mission            ║");
     println!("╚═══════════════════════════════════════════════╝\n");
 
