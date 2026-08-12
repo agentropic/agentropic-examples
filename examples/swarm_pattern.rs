@@ -1,7 +1,7 @@
 //! Swarm: Decentralized agents vote to reach consensus without a leader.
-use z_core::{Agent, AgentContext, AgentId, AgentResult};
-use z_patterns::swarm::Swarm;
-use z_runtime::prelude::*;
+use agent_core::{Agent, AgentContext, AgentId, AgentResult};
+use patterns::swarm::Swarm;
+use runtime::prelude::*;
 use async_trait::async_trait;
 use std::sync::{Arc, Mutex};
 
@@ -108,7 +108,7 @@ impl Agent for TallyAgent {
 #[tokio::main]
 async fn main() -> Result<(), RuntimeError> {
     println!("╔═══════════════════════════════════════════════╗");
-    println!("║   ZeroicAI — Swarm Pattern                  ║");
+    println!("║   RustyAI — Swarm Pattern                  ║");
     println!("║   Decentralized consensus voting              ║");
     println!("╚═══════════════════════════════════════════════╝\n");
 

@@ -1,4 +1,4 @@
-//! ZeroicAI × Solana — Autonomous Trading Swarm Demo
+//! RustyAI × Solana — Autonomous Trading Swarm Demo
 //!
 //! 6 agents coordinate a simulated SOL/USDC trading session:
 //!   • PriceOracle   — broadcasts SOL prices each round (5 ticks)
@@ -12,9 +12,9 @@
 //!
 //! Run: cargo run --example solana_swarm
 
-use z_core::{Agent, AgentContext, AgentId, AgentError, AgentResult};
-use z_patterns::market::{Auction, AuctionType, Bid};
-use z_runtime::prelude::*;
+use agent_core::{Agent, AgentContext, AgentId, AgentError, AgentResult};
+use patterns::market::{Auction, AuctionType, Bid};
+use runtime::prelude::*;
 use async_trait::async_trait;
 use std::sync::{Arc, Mutex};
 use std::sync::atomic::{AtomicU32, Ordering};
@@ -342,7 +342,7 @@ impl Agent for AuctioneerAgent {
 #[tokio::main]
 async fn main() -> Result<(), RuntimeError> {
     println!("╔══════════════════════════════════════════════════════════╗");
-    println!("║   ZeroicAI × Solana — Autonomous Trading Swarm Demo     ║");
+    println!("║   RustyAI × Solana — Autonomous Trading Swarm Demo     ║");
     println!("║   6 agents · BDI reasoning · Auction · Supervision      ║");
     println!("╚══════════════════════════════════════════════════════════╝\n");
 
@@ -410,7 +410,7 @@ async fn main() -> Result<(), RuntimeError> {
     println!("  Price rounds:    5  (SOL/USDC simulated feed)");
     println!("  Trades settled:  {}", trades);
     println!("  Crashes handled: {}  (TraderGamma — auto-recovered by Supervisor)", crashes);
-    println!("  Framework:       ZeroicAI v0.1 · github.com/ZeroicAI");
+    println!("  Framework:       RustyAI v0.1 · github.com/RustyAI");
     println!("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
 
     runtime.shutdown().await?;

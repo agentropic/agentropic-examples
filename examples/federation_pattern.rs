@@ -1,7 +1,7 @@
 //! Federation: Agents vote on proposals with weighted voting.
-use z_core::{Agent, AgentContext, AgentId, AgentResult};
-use z_patterns::federation::{Federation, Policy, PolicyType};
-use z_runtime::prelude::*;
+use agent_core::{Agent, AgentContext, AgentId, AgentResult};
+use patterns::federation::{Federation, Policy, PolicyType};
+use runtime::prelude::*;
 use async_trait::async_trait;
 use std::sync::{Arc, Mutex};
 
@@ -112,7 +112,7 @@ impl Agent for DelegateAgent {
 #[tokio::main]
 async fn main() -> Result<(), RuntimeError> {
     println!("╔═══════════════════════════════════════════════╗");
-    println!("║   ZeroicAI — Federation Pattern             ║");
+    println!("║   RustyAI — Federation Pattern             ║");
     println!("║   Weighted voting on proposals                ║");
     println!("╚═══════════════════════════════════════════════╝\n");
 

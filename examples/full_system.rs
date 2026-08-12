@@ -1,8 +1,8 @@
 //! Full system demo: agents run, talk, reason, and self-heal.
-use z_core::{Agent, AgentContext, AgentId, AgentError, AgentResult};
-use z_cognition::Rule;
-use z_runtime::prelude::*;
-use z_runtime::CognitiveAgent;
+use agent_core::{Agent, AgentContext, AgentId, AgentError, AgentResult};
+use cognition::Rule;
+use runtime::prelude::*;
+use runtime::CognitiveAgent;
 use async_trait::async_trait;
 use std::sync::atomic::{AtomicU32, Ordering};
 use std::sync::Arc;
@@ -122,7 +122,7 @@ impl Agent for UnreliableAgent {
 #[tokio::main]
 async fn main() -> Result<(), RuntimeError> {
     println!("╔═══════════════════════════════════════════════╗");
-    println!("║   ZeroicAI — Full System Demo               ║");
+    println!("║   RustyAI — Full System Demo               ║");
     println!("║   Running + Messaging + Reasoning + Recovery   ║");
     println!("╚═══════════════════════════════════════════════╝\n");
 
@@ -142,8 +142,8 @@ async fn main() -> Result<(), RuntimeError> {
 
     let mut thinker = CognitiveAgent::from_config("data/beliefs.json", "data/config.json");
     thinker.add_rule(Rule::new("topic:what_is")
-        .with_condition("what").with_condition("zeroicai")
-        .with_conclusion("what_is_zeroicai"));
+        .with_condition("what").with_condition("rustyai")
+        .with_conclusion("what_is_rustyai"));
     thinker.add_rule(Rule::new("topic:patterns")
         .with_condition("pattern").with_condition("support")
         .with_conclusion("patterns"));
@@ -161,8 +161,8 @@ async fn main() -> Result<(), RuntimeError> {
         async fn initialize(&mut self, _ctx: &AgentContext) -> AgentResult<()> { Ok(()) }
         async fn execute(&mut self, ctx: &AgentContext) -> AgentResult<()> {
             if !self.asked {
-                println!("  [QuickAsker] → \"What is ZeroicAI?\"");
-                ctx.send_message("thinker", "query", "What is ZeroicAI?");
+                println!("  [QuickAsker] → \"What is RustyAI?\"");
+                ctx.send_message("thinker", "query", "What is RustyAI?");
                 self.asked = true;
             }
             tokio::time::sleep(std::time::Duration::from_millis(200)).await;
