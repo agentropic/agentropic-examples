@@ -1,11 +1,11 @@
-# ZeroicAI Examples
+# RustyAI Examples
 
-Working examples for the [ZeroicAI](https://zeroicai.xyz) multi-agent framework in Rust.
+Working examples for the [RustyAI](https://rustyai.xyz) multi-agent framework in Rust.
 Clone this repo and run any example with a single command — no config, no API keys required.
 
 ```bash
-git clone https://github.com/ZeroicAI/z-examples
-cd z-examples
+git clone https://github.com/RustyAI/examples
+cd examples
 cargo run --example hello_agent
 ```
 
@@ -22,7 +22,7 @@ cargo run --example solana_swarm
 
 ```
 ╔══════════════════════════════════════════════════╗
-║  ZeroicAI × Solana - Autonomous Trading Swarm  ║
+║  RustyAI × Solana - Autonomous Trading Swarm  ║
 ║  6 agents · BDI reasoning · Supervision         ║
 ╚══════════════════════════════════════════════════╝
 
@@ -37,7 +37,7 @@ cargo run --example solana_swarm
 ━━━ Session Summary ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Trades settled:  3
   Crashes handled: 2  (auto-recovered by Supervisor)
-  Framework:       ZeroicAI v0.1
+  Framework:       RustyAI v0.1
 ```
 
 ---
