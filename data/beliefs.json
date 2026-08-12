@@ -1,18 +1,18 @@
 {
   "beliefs": [
     {
-      "key": "what_is_zeroicai",
-      "value": "ZeroicAI is a modular multi-agent framework built in Rust. It provides agent lifecycle, messaging, cognition, patterns, and a supervised runtime.",
+      "key": "what_is_rustyai",
+      "value": "RustyAI is a modular multi-agent framework built in Rust. It provides agent lifecycle, messaging, cognition, patterns, and a supervised runtime.",
       "certainty": 1.0
     },
     {
       "key": "crates",
-      "value": "ZeroicAI has 5 crates: core (Agent trait, lifecycle), messaging (Router, FIPA performatives), cognition (BDI, reasoning, planning), patterns (8 organizational patterns), and runtime (supervisor, scheduler).",
+      "value": "RustyAI has 5 crates: agent-core (Agent trait, lifecycle), messaging (Router, FIPA performatives), cognition (BDI, reasoning, planning), patterns (8 organizational patterns), and runtime (supervisor, scheduler).",
       "certainty": 1.0
     },
     {
       "key": "patterns",
-      "value": "ZeroicAI supports 8 patterns: Hierarchy, Swarm, Coalition, Market, Federation, Team, Holarchy, and Blackboard.",
+      "value": "RustyAI supports 8 patterns: Hierarchy, Swarm, Coalition, Market, Federation, Team, Holarchy, and Blackboard.",
       "certainty": 1.0
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "key": "rust",
-      "value": "ZeroicAI is built in Rust for type safety, zero-cost abstractions, fearless concurrency, and no garbage collector. Agents run as lightweight tokio tasks using minimal memory.",
+      "value": "RustyAI is built in Rust for type safety, zero-cost abstractions, fearless concurrency, and no garbage collector. Agents run as lightweight tokio tasks using minimal memory.",
       "certainty": 1.0
     },
     {
@@ -77,7 +77,7 @@
     },
     {
       "key": "getting_started",
-      "value": "To start: add z-core to Cargo.toml, implement the Agent trait (initialize, execute, shutdown), then spawn with Runtime::new().spawn(Box::new(agent), name).await.",
+      "value": "To start: add agent-core to Cargo.toml, implement the Agent trait (initialize, execute, shutdown), then spawn with Runtime::new().spawn(Box::new(agent), name).await.",
       "certainty": 1.0
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "key": "xbot",
-      "value": "ZeroicAI xbot is the first real application built on the framework. It's a Twitter/X bot that posts scheduled tweets using the Agent trait, with a knowledge base and reasoning engine for generating responses.",
+      "value": "RustyAI xbot is the first real application built on the framework. It's a Twitter/X bot that posts scheduled tweets using the Agent trait, with a knowledge base and reasoning engine for generating responses.",
       "certainty": 1.0
     },
     {
@@ -117,32 +117,32 @@
     },
     {
       "key": "open_source",
-      "value": "ZeroicAI is open source under MIT and Apache-2.0 dual license. All code is on GitHub at github.com/zeroicai.",
+      "value": "RustyAI is open source under MIT and Apache-2.0 dual license. All code is on GitHub at github.com/rustyai.",
       "certainty": 1.0
     },
     {
       "key": "vision",
-      "value": "ZeroicAI's vision is three layers: agent-oriented programming (the framework), agentic app development (tools and SDK for developers), and agentic app deployment (infrastructure to run agents in production).",
+      "value": "RustyAI's vision is three layers: agent-oriented programming (the framework), agentic app development (tools and SDK for developers), and agentic app deployment (infrastructure to run agents in production).",
       "certainty": 1.0
     },
     {
-      "key": "llm:how_does_zeroicai_compare_to_other_agent_framewo",
-      "value": "ZeroicAI stands out due to its focus on scalability and high performance, achieved through the use of Rust's memory safety guarantees. Compared to other agent frameworks, it offers efficient communication between agents and supports large-scale simulations with complex environments. However, it may have a steeper learning curve due to its use of Rust.",
+      "key": "llm:how_does_rustyai_compare_to_other_agent_framewo",
+      "value": "RustyAI stands out due to its focus on scalability and high performance, achieved through the use of Rust's memory safety guarantees. Compared to other agent frameworks, it offers efficient communication between agents and supports large-scale simulations with complex environments. However, it may have a steeper learning curve due to its use of Rust.",
       "certainty": 0.8
     },
     {
-      "key": "llm:can_i_use_zeroicai_for_robotics?",
-      "value": "Yes, ZeroicAI can be used for robotics applications as it allows for the development of intelligent agents that can interact with each other and their environment, which is applicable to robotic systems. However, you may need additional libraries or integrations to handle specific robotics-related tasks such as sensor data processing or motor control.",
+      "key": "llm:can_i_use_rustyai_for_robotics?",
+      "value": "Yes, RustyAI can be used for robotics applications as it allows for the development of intelligent agents that can interact with each other and their environment, which is applicable to robotic systems. However, you may need additional libraries or integrations to handle specific robotics-related tasks such as sensor data processing or motor control.",
       "certainty": 0.8
     },
     {
       "key": "llm:what_is_the_difference_between_an_agent_and_a_micr",
-      "value": "An agent in ZeroicAI refers to an autonomous entity capable of perceiving its environment and acting upon it to achieve goals, while a microservice is a loosely coupled service within an application that performs a specific function. Though both are independent entities, they differ in their purpose, design, and context – agents operate within the framework for AI and multi-agent systems, while microservices are part of larger software applications.",
+      "value": "An agent in RustyAI refers to an autonomous entity capable of perceiving its environment and acting upon it to achieve goals, while a microservice is a loosely coupled service within an application that performs a specific function. Though both are independent entities, they differ in their purpose, design, and context – agents operate within the framework for AI and multi-agent systems, while microservices are part of larger software applications.",
       "certainty": 0.8
     },
     {
-      "key": "llm:can_zeroicai_agents_collaborate_with_external_ap",
-      "value": "ZeroicAI itself does not directly facilitate interactions with external APIs, as it is designed for agent communication and coordination within the framework's own multi-agent systems using FIPA performatives. For integrating with external services or APIs, additional libraries or middleware would be required to handle such tasks.",
+      "key": "llm:can_rustyai_agents_collaborate_with_external_ap",
+      "value": "RustyAI itself does not directly facilitate interactions with external APIs, as it is designed for agent communication and coordination within the framework's own multi-agent systems using FIPA performatives. For integrating with external services or APIs, additional libraries or middleware would be required to handle such tasks.",
       "certainty": 0.8
     }
   ]
