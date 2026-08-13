@@ -410,7 +410,7 @@ async fn main() -> Result<(), RuntimeError> {
     println!("  Price rounds:    5  (SOL/USDC simulated feed)");
     println!("  Trades settled:  {}", trades);
     println!("  Crashes handled: {}  (TraderGamma — auto-recovered by Supervisor)", crashes);
-    println!("  Framework:       RustyAI v0.1 · github.com/RustyAI");
+    println!("  Framework:       RustyAI v0.1 · github.com/RustyAIFW");
     println!("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
 
     runtime.shutdown().await?;
