@@ -1,10 +1,10 @@
 # RustyAI Examples
 
-Working examples for the [RustyAI](https://rustyai.xyz) multi-agent framework in Rust.
+Working examples for the [RustyAI](https://www.rustyaifw.xyz) multi-agent framework in Rust.
 Clone this repo and run any example with a single command — no config, no API keys required.
 
 ```bash
-git clone https://github.com/RustyAI/examples
+git clone https://github.com/RustyAIFW/examples
 cd examples
 cargo run --example hello_agent
 ```
